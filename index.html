@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Криниця - копання криниць механічним способом </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+
+</head>
+
+<body>
+    <div class="info-container">
+        <a href="tel:+380961097608" class="link-button">Зателефонувати</a>
+    </div>
+    <div class="wrapper">
+        <div class="pushbar_main_content">
+            <div data-pushbar-target="menu" class="menu__btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div data-pushbar-id="menu" data-pushbar-direction="right">
+            <div class="container hamburger-menu__header">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <a href="tel:+380677913049" style="text-decoration: none;">
+                            <div class="d-flex" style="margin: 20px 0;">
+                                <div>
+                                    <span class="phone-text">+38 067-791-30-49</span>
+                                </div>
+                                <div class="phone-animation">
+                                    <span class="phone-text-wave wave-affect">+38 067-791-30-49</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <div data-pushbar-close class="menu__close">
+                            <span></span>
+                            <span ::before></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hamburger-menu__content">
+                <ul class="menu__box">
+                    <li>
+                        <a class="menu__item" href="#">Головна</a>
+                    </li>
+                    <li>
+                        <a class="menu__item" href="#">Що? Як? Де? копати</a>
+                    </li>
+                    <li><a class="menu__item" href="#">Контакти</a></li>
+                </ul>
+            </div>
+            <div class="hamburger-menu__footer">
+                <a href="mailto:art.tsukuru@gmail.com">
+                    <img src="./assets/img/tsukuru.svg" alt="tsukuru icon">
+                </a>
+            </div>
+        </div>
+        <header class="container h-auto">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="m-20"> <span class="logo-text ">Криниця</span></div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="m-20 clear-fix phone">
+                        <a href="tel:+380677913049" style="text-decoration: none;">
+                            <div class="d-flex">
+                                <div>
+                                    <span class="phone-text">+38 067-791-30-49</span>
+                                </div>
+                                <div class="phone-animation">
+                                    <span class="phone-text-wave wave-affect">+38 067-791-30-49</span>
+                                    <!-- <a class="phone-text-wave wave-affect" href="tel:+380677913049">+38 067-791-30-49</a> -->
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="hero-content">
+                        <span class="hero-text hero-padding">Копаємо швидко колодязі та криниці</span>
+                        <span class="hero-subtext hero-padding">Процес копки відбувається механічним способом</span>
+                        <button class="button shadow">Копаємо</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <!-- <div id="canvas"></div> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+
+                </div>
+            </div>
+        </header>
+        <div class="container h-auto">
+            <div class="row">
+                <div class="col">
+
+                </div>
+            </div>
+        </div>
+        <div class="container h-auto">
+            <div class="row">
+                <div class="col">
+                    <div class="header-text pb-10 mt-60">Ми копаємо в наступних областях України </div>
+                    <div id="mapid"></div>
+                </div>
+                <!-- <div class="col">
+                    <div class="m-60">
+                        <span class="header-text">Ми копаємо в областях України </span>
+                    </div>
+                </div> -->
+            </div>
+            <div class="row">
+                <div class="col">
+                    <a href="mailto:art.tsukuru@gmail.com">
+                        <img src="./assets/img/tsukuru.svg" alt="tsukuru icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+    <script type="text/javascript">
+        const pushbar = new Pushbar({
+            blur: true,
+            overlay: true,
+        });
+    </script>
+    <script src="./assets/js/three.js"></script>
+    <script>
+        const canvas = document.getElementById('canvas');
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, canvas.offsetWidth / canvas.offsetHeight, 0.1, 1000);
+
+        const renderer = new THREE.WebGLRenderer({
+            alpha: true
+        });
+        renderer.setSize(canvas.offsetWidth, canvas.offsetHeight);
+        renderer.setClearColor(0x000000, 0); // the default
+        canvas.appendChild(renderer.domElement);
+
+        const geometry = new THREE.BoxGeometry();
+        const material = new THREE.MeshBasicMaterial({
+            color: 0x00ff00
+        });
+        const cube = new THREE.Mesh(geometry, material);
+        scene.add(cube);
+
+        camera.position.z = 5;
+
+        const animate = function() {
+            requestAnimationFrame(animate);
+
+            cube.rotation.x += 0.01;
+            cube.rotation.y += 0.01;
+
+            renderer.render(scene, camera);
+        };
+
+        animate();
+    </script>
+    <script src="./assets/js/script.js"></script>
+    <!-- <script src="./assets/js/grass.js"></script> -->
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <script type="text/javascript">
+        var map = L.map('mapid').setView([49.646, 27.781], 6);
+        L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+            className: 'map-tiles'
+        }).addTo(map);
+
+        let settings = {
+            fillColor: "#e00",
+            color: "#f00",
+            opacity: 1,
+            fillOpacity: 0.2
+        }
+
+        fetch("./assets/geo/vinnytsia.geojson")
+            .then(function(response) {
+                return response.json();
+            }).then(function(json) {
+                L.geoJSON(json, settings).addTo(map);
+            });
+
+        fetch("./assets/geo/hmelnytskii.geojson")
+            .then(function(response) {
+                return response.json();
+            }).then(function(json) {
+                L.geoJSON(json, settings).addTo(map);
+            });
+        fetch("./assets/geo/zhytomyr.geojson")
+            .then(function(response) {
+                return response.json();
+            }).then(function(json) {
+                L.geoJSON(json, settings).addTo(map);
+            });
+
+        // L.marker([49.005, 27.543])
+        //     .bindLabel('Вінницька область', {
+        //         noHide: true
+        //     })
+        //     .addTo(map);
+    </script>
+
+</body>
+
+</html
