@@ -8,7 +8,7 @@ const onScroll = () => {
     let header = document.querySelector('header');
 
     window.addEventListener('scroll', () => {
-        if (pageYOffset > header.clientHeight) {
+        if (scrollY > header.clientHeight) {
             infocontainer.classList.add('show');
             infocontainer.hidden = false;
         } else {

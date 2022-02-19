@@ -13,22 +13,56 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <title>Криниця - копання криниць механічним способом </title>
+    <meta name="description" content="Швидко копаємо докопуємо та копаємо криниці, вигрібні ями в Вінницькій, Хмельницькій та Житомирській областях">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '409327057460032');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=409327057460032&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
 
 </head>
 
 <body>
     <div class="info-container">
         <a href="tel:+380961097608" class="link-button">Зателефонувати</a>
+    </div>
+    <div class="boer-container">
+        <!-- <img src="assets/img/boer.png" alt="Буримо :)"> -->
+        <!-- <video width="320" height="240" autoplay>
+            <source src="./assets/img/boer.mov" type="video/mp4">
+        </video>  -->
     </div>
     <div class="wrapper">
         <div class="pushbar_main_content">
@@ -39,35 +73,34 @@
             </div>
         </div>
         <div data-pushbar-id="menu" data-pushbar-direction="right">
-            <div class="container hamburger-menu__header">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <a href="tel:+380677913049" style="text-decoration: none;">
-                            <div class="d-flex" style="margin: 20px 0;">
-                                <div>
-                                    <span class="phone-text">+38 067-791-30-49</span>
-                                </div>
-                                <div class="phone-animation">
-                                    <span class="phone-text-wave wave-affect">+38 067-791-30-49</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-sm-6">
-                        <div data-pushbar-close class="menu__close">
-                            <span></span>
-                            <span ::before></span>
+            <div class="hamburger-menu__header">
+                <a class="phone-link" href="tel:+380677913049">
+                    <div class="d-flex" style="margin: 20px 0;">
+                        <div>
+                            <span class="phone-text">+38 067-791-30-49</span>
+                        </div>
+                        <div class="phone-animation">
+                            <span class="phone-text-wave wave-affect">+38 067-791-30-49</span>
                         </div>
                     </div>
+                </a>
+                <div data-pushbar-close class="menu__close">
+                    <span></span>
+                    <span ::before></span>
                 </div>
             </div>
             <div class="hamburger-menu__content">
                 <ul class="menu__box">
                     <li>
-                        <a class="menu__item" href="#">Головна</a>
+                        <a class="menu__item" href="#">На початок</a>
                     </li>
                     <li>
-                        <a class="menu__item" href="#">Що? Як? Де? копати</a>
+                        <a class="menu__item" href="#">Послуги</a>
+                        <ul>
+                            <li><a class="menu__item" href="#">Механічне буріння криниці</a></li>
+                            <li><a class="menu__item" href="#">Докопка та поглиблення криниці</a></li>
+                            <li><a class="menu__item" href="#">Копання вигрібної ями</a></li>
+                        </ul>
                     </li>
                     <li><a class="menu__item" href="#">Контакти</a></li>
                 </ul>
@@ -81,7 +114,7 @@
         <header class="container h-auto">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="m-20"> <span class="logo-text ">Криниця</span></div>
+                    <div class="m-20"> <span class="logo-text">Криниця</span></div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="m-20 clear-fix phone">
@@ -92,7 +125,6 @@
                                 </div>
                                 <div class="phone-animation">
                                     <span class="phone-text-wave wave-affect">+38 067-791-30-49</span>
-                                    <!-- <a class="phone-text-wave wave-affect" href="tel:+380677913049">+38 067-791-30-49</a> -->
                                 </div>
                             </div>
                         </a>
@@ -104,37 +136,73 @@
                     <div class="hero-content">
                         <span class="hero-text hero-padding">Копаємо швидко колодязі та криниці</span>
                         <span class="hero-subtext hero-padding">Процес копки відбувається механічним способом</span>
-                        <button class="button shadow">Копаємо</button>
+                        <a class="button shadow" href="#mechanic" role="button">Копаємо</a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <!-- <div id="canvas"></div> -->
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-
+                    <!-- <img src="./assets/img/boer.png" alt="boer photo"> -->
                 </div>
             </div>
         </header>
-        <div class="container h-auto">
+        <div class="container h-auto" id="mechanic">
             <div class="row">
                 <div class="col">
-
+                    <div class="header-text mt-4 justify-content-center">Послуги</div>
+                    <div class="subheader-text subheader-color">Механічне буріння криниці</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <div class="picture d-flex pt-4">
+                        <img class="img-fluid" src="./assets/img/k_4.svg" alt="механічне буріння криниці картинка">
+                    </div>
+                </div>
+                <div class="col-7">
+                    <p class="text">Швидкість копання криниці є досить великою, так як приблизно 3-6 годин потрібно для того, щоб викопати криницю, глибина якої складає 20 метрів</p>
                 </div>
             </div>
         </div>
         <div class="container h-auto">
             <div class="row">
                 <div class="col">
-                    <div class="header-text pb-10 mt-60">Ми копаємо в наступних областях України </div>
+                    <div class="subheader-text subheader-color mt-4">Докопка та поглиблення криниці</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <div class="picture d-flex pt-4">
+                        <img src="./assets/img/k_1.svg" alt="докопка та поглиблення криниці картинка">
+                    </div>
+                </div>
+                <div class="col-7">
+                    <p class="text">Докопаємо</p>
+                </div>
+            </div>
+        </div>
+        <div class="container h-auto">
+            <div class="row">
+                <div class="col">
+                    <div class="subheader-text subheader-color mt-4">Копання вигрібної ями</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="picture d-flex pt-4">
+                        <img src="./assets/img/k_3.svg" alt="копання вигрібної ями картинка">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <p class="text">Висота не повинна перевищувати 3 метри. Це пов’язано з тим, що в подальшому асенізаційна машина повинна отримати доступ до викачування вигрібної ями.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container h-auto">
+            <div class="row">
+                <div class="col">
+                    <div class="subheader-text subheader-color mt-4">Копаємо в наступних областях України </div>
                     <div id="mapid"></div>
                 </div>
-                <!-- <div class="col">
-                    <div class="m-60">
-                        <span class="header-text">Ми копаємо в областях України </span>
-                    </div>
-                </div> -->
             </div>
             <div class="row">
                 <div class="col">
@@ -152,45 +220,14 @@
             overlay: true,
         });
     </script>
-    <script src="./assets/js/three.js"></script>
-    <script>
-        const canvas = document.getElementById('canvas');
-        const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(75, canvas.offsetWidth / canvas.offsetHeight, 0.1, 1000);
-
-        const renderer = new THREE.WebGLRenderer({
-            alpha: true
-        });
-        renderer.setSize(canvas.offsetWidth, canvas.offsetHeight);
-        renderer.setClearColor(0x000000, 0); // the default
-        canvas.appendChild(renderer.domElement);
-
-        const geometry = new THREE.BoxGeometry();
-        const material = new THREE.MeshBasicMaterial({
-            color: 0x00ff00
-        });
-        const cube = new THREE.Mesh(geometry, material);
-        scene.add(cube);
-
-        camera.position.z = 5;
-
-        const animate = function() {
-            requestAnimationFrame(animate);
-
-            cube.rotation.x += 0.01;
-            cube.rotation.y += 0.01;
-
-            renderer.render(scene, camera);
-        };
-
-        animate();
-    </script>
+    <!-- <script src="./assets/js/3d.js" type="module"></script> -->
     <script src="./assets/js/script.js"></script>
     <!-- <script src="./assets/js/grass.js"></script> -->
-    <!-- Make sure you put this AFTER Leaflet's CSS -->
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
     <script type="text/javascript">
-        var map = L.map('mapid').setView([49.646, 27.781], 6);
+        var map = L.map('mapid', {
+            scrollWheelZoom: false
+        }).setView([49.646, 27.781], 6);
         L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
             className: 'map-tiles'

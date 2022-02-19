@@ -3,7 +3,8 @@
     }
     
     a:hover {
-        color: #1DB9B9;
+        color: #bb9255;
+        /* #1DB9B9; */
     }
     
     .h-auto {
@@ -11,40 +12,30 @@
         min-height: 100vh;
     }
     
-    .p-20 {
-        padding: 20px 0;
-    }
-    
-    .p-100 {
-        padding: 100px 0;
-    }
-    
-    .m-20 {
-        margin: 20px 0
-    }
-    
-    .m-60 {
-        margin: 60px 0
-    }
-    
-    .mt-60 {
-        margin-top: 60px;
-    }
-    
-    .pb-10 {
-        padding-bottom: 10px;
-    }
-    
     .header-text {
-        font-size: 26px;
+        font-size: 60px;
         line-height: 130%;
         font-weight: bold;
     }
     
     .subheader-text {
-        font-size: 20px;
+        font-size: 42px;
         line-height: 130%;
         font-weight: bold;
+    }
+    
+    .text {
+        color: #000;
+        font-size: 36px;
+    }
+    
+    .subheader-color {
+        color: #000000;
+    }
+    
+    .picture {
+        width: auto;
+        height: 65vh;
     }
     
     body {
@@ -79,10 +70,22 @@
     
     .info-container {
         display: none;
-        z-index: 1000;
+        z-index: 1001;
         position: fixed;
         right: 25px;
         bottom: 25px;
+    }
+    
+    .boer-container {
+        display: block;
+        z-index: 1001;
+        position: fixed;
+        right: 100px;
+        bottom: 0px;
+    }
+    
+    .boer-container img {
+        width: 28vw
     }
     
     .show {
@@ -120,7 +123,7 @@
     }
     
     .button {
-        background-color: #3EE0E0;
+        background-color: #bb9255;
         border-radius: 0;
         display: inline-block;
         cursor: pointer;
@@ -136,7 +139,8 @@
     }
     
     .button:hover {
-        background-color: #1DB9B9;
+        background-color: #a78656;
+        color: #fff;
     }
     
     .link-button {
@@ -148,7 +152,7 @@
         font-style: normal;
         font-weight: bold;
         font-size: 24px;
-        padding: 10px 55px;
+        padding: 10px 20px;
         border: 0px;
         text-decoration: none;
         outline: none;
@@ -158,28 +162,6 @@
     .shadow {
         box-shadow: 3px 4px 4px rgb(0 0 0 / 25%);
     }
-    /* #menu__toggle {
-    opacity: 0;
-    position: absolute;
-}
-
-#menu__toggle:checked~.menu__btn>span {
-    transform: rotate(45deg);
-}
-
-#menu__toggle:checked~.menu__btn>span::before {
-    top: 0;
-    transform: rotate(0);
-}
-
-#menu__toggle:checked~.menu__btn>span::after {
-    top: 0;
-    transform: rotate(90deg);
-} */
-    /* #menu__toggle:checked~.hamburger-menu {
-    visibility: visible;
-    right: 0;
-} */
     
     #menu__toggle:checked~.overlay {
         display: block;
@@ -204,7 +186,7 @@
         position: absolute;
         width: 100%;
         height: 3px;
-        background-color: #3EE0E0;
+        background-color: #bb9255;
         transition-duration: .25s;
     }
     
@@ -237,7 +219,7 @@
         position: absolute;
         width: 100%;
         height: 3px;
-        background-color: #3EE0E0;
+        background-color: #bb9255;
         /* transition-duration: .25s; */
     }
     
@@ -326,14 +308,18 @@
         /* background-color: #006CD0; */
     }
     
-    .phone {}
+    .phone-link {
+        display: none;
+        text-decoration: none;
+        margin: 0 20px;
+    }
     
     .phone-text {
         font-size: 20px;
         text-decoration: none;
         line-height: 44px;
         font-weight: 600;
-        color: #ff8c00;
+        color: #20225d;
     }
     
     .phone-text-wave {
@@ -387,13 +373,22 @@
     /* // Extra small devices (portrait phones, less than 576px) */
     
     @media (max-width: 575.98px) {
-        .phone {
-            display: none;
+        .phone-text {
+            font-size: 18px;
+        }
+        .phone-text-wave {
+            font-size: 18px;
+        }
+        .phone-link {
+            display: block;
         }
     }
     /* // Small devices (landscape phones, less than 768px) */
     
     @media (max-width: 767.98px) {
+        .phone {
+            display: none;
+        }
         .link-button {
             font-size: 16px;
         }
@@ -409,6 +404,10 @@
         [data-pushbar-direction=left][data-pushbar-id],
         [data-pushbar-direction=right][data-pushbar-id] {
             width: 300px!important;
+            z-index: 2000;
+        }
+        .info-container {
+            display: block;
         }
     }
     /* // Medium devices (tablets, less than 992px) */
@@ -421,3 +420,14 @@
     /* // Large devices (desktops, less than 1200px) */
     
     @media (max-width: 1199.98px) {}
+    
+    @media (max-width: 1600px) {}
+    /**
+    * MIN
+    */
+    
+    @media (min-width: 767.98px) {
+        .info-container {
+            display: none;
+        }
+    }
