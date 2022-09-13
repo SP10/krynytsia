@@ -20,6 +20,29 @@ a:hover {
     color: var(--link-hover);
 }
 
+a.hide-link{
+    text-decoration: none;
+}
+
+.img-thumbnail{
+    float: right;
+    max-width: 500px;
+}
+
+article{
+    display: block;
+}
+
+b{
+    background: linear-gradient(
+    to right, 
+    hsl(98 100% 62%), 
+    hsl(204 100% 59%)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 h1 {
     font-size: 32px;
     line-height: 130%;

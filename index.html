@@ -12,8 +12,7 @@
     <link rel="mask-icon" href="./assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <title>Копання криниць у Вінниці в 2022 - якісно, пунктуально копаємо криниці, виконуємо докопку, поглиблення
-    </title>
+    <title>Копання криниць у Вінниці в 2022 - якісно, пунктуально копаємо криниці, виконуємо докопку, поглиблення</title>
     <meta name="description"
         content="криниця під ключ Вінниця⇒ копання криниць Житомирська область ⇒ копання криниць Хмельницька область ⇒ відповідальність ✔досвідченість команди✔ високий результат роботи ✔ завжди вчасно завжди якісно ✔ чесно і швидко ✔">
 
@@ -81,16 +80,6 @@
         </div>
         <div data-pushbar-id="menu" data-pushbar-direction="right">
             <div class="hamburger-menu__header">
-                <!-- <a class="phone-link" href="tel:+380677913049">
-                    <div class="d-flex" style="margin: 20px 0;">
-                        <div>
-                            <span class="phone-text">+38 067-791-30-49</span>
-                        </div>
-                        <div class="phone-animation">
-                            <span class="phone-text-wave wave-affect">+38 067-791-30-49</span>
-                        </div>
-                    </div>
-                </a> -->
                 <div data-pushbar-close class="menu__close">
                     <span></span>
                     <span ::before></span>
@@ -99,14 +88,14 @@
             <div class="hamburger-menu__content">
                 <ul class="menu__box">
                     <li>
-                        <a class="menu__item" href="#">На початок</a>
+                        <a class="menu__item" href="/">На початок</a>
                     </li>
                     <li>
                         <a class="menu__item" href="#">Послуги</a>
                         <ul class="sub-menu-box">
-                            <li><a class="menu__item" href="#">Механічне буріння криниці</a></li>
-                            <li><a class="menu__item" href="#">Докопка та поглиблення криниці</a></li>
-                            <li><a class="menu__item" href="#">Копання вигрібної ями</a></li>
+                            <li><a class="menu__item" href="/service/wells.html">Механічне буріння криниці</a></li>
+                            <li><a class="menu__item" href="/service/deepening.html">Докопка та поглиблення криниці</a></li>
+                            <li><a class="menu__item" href="/service/cesspools.html">Копання вигрібної ями</a></li>
                         </ul>
                     </li>
                     <li><a class="menu__item" href="#">Контакти</a></li>
@@ -118,10 +107,12 @@
                 </a>
             </div>
         </div>
-        <header class="container h-auto">
+        <header class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="m-20"> <span class="logo-text">Криниця</span></div>
+                    <div class="m-20">
+                        <a href="/" class="hide-link"><span class="logo-text">Криниця</span></a>
+                    </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="phone-link m-20 clear-fix">
@@ -138,6 +129,8 @@
                     </div>
                 </div>
             </div>
+        </header>
+        <section class="container h-auto" id="home">
             <div class="row">
                 <div class="col-lg-6 col-md-8 col-sm-10">
                     <div class="hero content">
@@ -151,8 +144,8 @@
                     <!-- <img src="./assets/img/boer.png" alt="boer photo"> -->
                 </div>
             </div>
-        </header>
-        <div class="container h-auto" id="service">
+        </section>
+        <section class="container h-auto" id="service">
             <div class="row">
                 <div class="col">
                     <div class="header">
@@ -218,8 +211,8 @@
                     </a>
                 </div>
             </div>
-        </div>
-        <div class="container h-auto" id="benefits">
+        </section>
+        <section class="container h-auto" id="benefits">
             <div class="row">
                 <div class="col">
                     <div class="header">
@@ -254,8 +247,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container h-auto" id="contact">
+        </section>
+        <section class="container h-auto" id="contact">
             <div class="row">
                 <div class="col">
                     <div class="header">
@@ -281,11 +274,11 @@
             <div class="row">
                 <div class="col">
                     <a href="mailto:art.tsukuru@gmail.com">
-                        <img src="./assets/img/tsukuru.svg" alt="tsukuru icon" title="Задизайнено та розроблено">
+                        <img src="/assets/img/tsukuru.svg" alt="tsukuru icon" title="Задизайнено та розроблено">
                     </a>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
     <script type="text/javascript">
@@ -335,12 +328,6 @@
             }).then(function (json) {
                 L.geoJSON(json, settings).addTo(map);
             });
-
-        // L.marker([49.005, 27.543])
-        //     .bindLabel('Вінницька область', {
-        //         noHide: true
-        //     })
-        //     .addTo(map);
     </script>
 
 </body>
